@@ -52,7 +52,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="prev" title="Tugas 4 : Naiye Bayes classification" href="Tugas-4.html" />
+    <link rel="prev" title="Tugas 6 : Decision Tree" href="Tugas-6.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -131,6 +131,16 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1">
   <a class="reference internal" href="Tugas-4.html">
    Tugas 4 : Naiye Bayes classification
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Tugas-5.html">
+   Tugas 5 : K-Means Clustering
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Tugas-6.html">
+   Tugas 6 : Decision Tree
   </a>
  </li>
  <li class="toctree-l1 current active">
@@ -378,7 +388,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-f2081b34-da88-4542-8f06-504e665b6544">
+  <div id="df-9ee43642-aa46-4f93-8633-e1a21d4e9bf9">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -479,7 +489,7 @@ title="Print to PDF"
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-f2081b34-da88-4542-8f06-504e665b6544')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-9ee43642-aa46-4f93-8633-e1a21d4e9bf9')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -530,12 +540,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-f2081b34-da88-4542-8f06-504e665b6544 button.colab-df-convert');
+          document.querySelector('#df-9ee43642-aa46-4f93-8633-e1a21d4e9bf9 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-f2081b34-da88-4542-8f06-504e665b6544');
+          const element = document.querySelector('#df-9ee43642-aa46-4f93-8633-e1a21d4e9bf9');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -680,7 +690,7 @@ Accuracy of the Naive Bayes Clasification is:  0.5833333333333334
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-279382c7-cc3c-40dd-b811-72f668318d15">
+  <div id="df-0f916624-575b-448e-a72f-cd1e33108576">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -781,7 +791,7 @@ Accuracy of the Naive Bayes Clasification is:  0.5833333333333334
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-279382c7-cc3c-40dd-b811-72f668318d15')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-0f916624-575b-448e-a72f-cd1e33108576')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -832,12 +842,12 @@ Accuracy of the Naive Bayes Clasification is:  0.5833333333333334
 
       <script>
         const buttonEl =
-          document.querySelector('#df-279382c7-cc3c-40dd-b811-72f668318d15 button.colab-df-convert');
+          document.querySelector('#df-0f916624-575b-448e-a72f-cd1e33108576 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-279382c7-cc3c-40dd-b811-72f668318d15');
+          const element = document.querySelector('#df-0f916624-575b-448e-a72f-cd1e33108576');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -963,34 +973,18 @@ dtype: object
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Looking in indexes: https://pypi.org/simple, https://us-python.pkg.dev/colab-wheels/public/simple/
-Collecting category_encoders
-  Downloading category_encoders-2.5.1.post0-py2.py3-none-any.whl (72 kB)
-?25l
-     |████▌                           | 10 kB 25.2 MB/s eta 0:00:01
-     |█████████                       | 20 kB 7.5 MB/s eta 0:00:01
-     |█████████████▋                  | 30 kB 10.4 MB/s eta 0:00:01
-     |██████████████████              | 40 kB 4.2 MB/s eta 0:00:01
-     |██████████████████████▋         | 51 kB 4.4 MB/s eta 0:00:01
-     |███████████████████████████▏    | 61 kB 5.1 MB/s eta 0:00:01
-     |███████████████████████████████▊| 71 kB 5.8 MB/s eta 0:00:01
-     |████████████████████████████████| 72 kB 695 kB/s 
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>?25hRequirement already satisfied: pandas&gt;=1.0.5 in /usr/local/lib/python3.7/dist-packages (from category_encoders) (1.3.5)
-Requirement already satisfied: patsy&gt;=0.5.1 in /usr/local/lib/python3.7/dist-packages (from category_encoders) (0.5.3)
+Requirement already satisfied: category_encoders in /usr/local/lib/python3.7/dist-packages (2.5.1.post0)
 Requirement already satisfied: scikit-learn&gt;=0.20.0 in /usr/local/lib/python3.7/dist-packages (from category_encoders) (1.0.2)
-Requirement already satisfied: numpy&gt;=1.14.0 in /usr/local/lib/python3.7/dist-packages (from category_encoders) (1.21.6)
 Requirement already satisfied: scipy&gt;=1.0.0 in /usr/local/lib/python3.7/dist-packages (from category_encoders) (1.7.3)
+Requirement already satisfied: numpy&gt;=1.14.0 in /usr/local/lib/python3.7/dist-packages (from category_encoders) (1.21.6)
+Requirement already satisfied: pandas&gt;=1.0.5 in /usr/local/lib/python3.7/dist-packages (from category_encoders) (1.3.5)
 Requirement already satisfied: statsmodels&gt;=0.9.0 in /usr/local/lib/python3.7/dist-packages (from category_encoders) (0.12.2)
-Requirement already satisfied: python-dateutil&gt;=2.7.3 in /usr/local/lib/python3.7/dist-packages (from pandas&gt;=1.0.5-&gt;category_encoders) (2.8.2)
+Requirement already satisfied: patsy&gt;=0.5.1 in /usr/local/lib/python3.7/dist-packages (from category_encoders) (0.5.3)
 Requirement already satisfied: pytz&gt;=2017.3 in /usr/local/lib/python3.7/dist-packages (from pandas&gt;=1.0.5-&gt;category_encoders) (2022.4)
+Requirement already satisfied: python-dateutil&gt;=2.7.3 in /usr/local/lib/python3.7/dist-packages (from pandas&gt;=1.0.5-&gt;category_encoders) (2.8.2)
 Requirement already satisfied: six in /usr/local/lib/python3.7/dist-packages (from patsy&gt;=0.5.1-&gt;category_encoders) (1.15.0)
 Requirement already satisfied: joblib&gt;=0.11 in /usr/local/lib/python3.7/dist-packages (from scikit-learn&gt;=0.20.0-&gt;category_encoders) (1.2.0)
 Requirement already satisfied: threadpoolctl&gt;=2.0.0 in /usr/local/lib/python3.7/dist-packages (from scikit-learn&gt;=0.20.0-&gt;category_encoders) (3.1.0)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Installing collected packages: category-encoders
-Successfully installed category-encoders-2.5.1.post0
 </pre></div>
 </div>
 </div>
@@ -1016,7 +1010,7 @@ Successfully installed category-encoders-2.5.1.post0
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-cf412db9-083c-460e-b98d-a7cc845556c0">
+  <div id="df-5ab24c23-255e-4d9d-801f-4f35179fb9d9">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1111,7 +1105,7 @@ Successfully installed category-encoders-2.5.1.post0
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-cf412db9-083c-460e-b98d-a7cc845556c0')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-5ab24c23-255e-4d9d-801f-4f35179fb9d9')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1162,12 +1156,12 @@ Successfully installed category-encoders-2.5.1.post0
 
       <script>
         const buttonEl =
-          document.querySelector('#df-cf412db9-083c-460e-b98d-a7cc845556c0 button.colab-df-convert');
+          document.querySelector('#df-5ab24c23-255e-4d9d-801f-4f35179fb9d9 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-cf412db9-083c-460e-b98d-a7cc845556c0');
+          const element = document.querySelector('#df-5ab24c23-255e-4d9d-801f-4f35179fb9d9');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1196,7 +1190,7 @@ Successfully installed category-encoders-2.5.1.post0
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-3467b886-aefb-4e9e-834d-2edd132c34bf">
+  <div id="df-266f35bb-cf7e-4cf3-a070-7685f6493b96">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1291,7 +1285,7 @@ Successfully installed category-encoders-2.5.1.post0
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-3467b886-aefb-4e9e-834d-2edd132c34bf')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-266f35bb-cf7e-4cf3-a070-7685f6493b96')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1342,12 +1336,12 @@ Successfully installed category-encoders-2.5.1.post0
 
       <script>
         const buttonEl =
-          document.querySelector('#df-3467b886-aefb-4e9e-834d-2edd132c34bf button.colab-df-convert');
+          document.querySelector('#df-266f35bb-cf7e-4cf3-a070-7685f6493b96 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-3467b886-aefb-4e9e-834d-2edd132c34bf');
+          const element = document.querySelector('#df-266f35bb-cf7e-4cf3-a070-7685f6493b96');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1518,11 +1512,11 @@ Test set score: 0.4615
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="Tugas-4.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="Tugas-6.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Tugas 4 : Naiye Bayes classification</p>
+            <p class="prev-next-title">Tugas 6 : Decision Tree</p>
         </div>
     </a>
 </div>
